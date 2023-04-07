@@ -9,5 +9,7 @@ edition = "2021"
 actix-web = "4.3.1"
 serde = "1.0.159"
 tokio = "1.27.0"
-tokio-postgres = "0.7.8"
 dotenv = "0.15.0"
+tokio-postgres = { version = "0.7", features = ["with-uuid-0_8"] }
+postgres = { version = "0.19", features = ["with-uuid-0_8"] }
+uuid = { version = "0.8", features = ["serde", "v4"] }
